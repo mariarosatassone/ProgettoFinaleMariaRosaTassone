@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark py-5">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-white font-weight-bold" [routerLink]="['/home']" routerLinkActive="router-link-active"
+                    aria-current="page" href="#">Home</a> |
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/tabella']" routerLinkActive="router-link-active"
+                    href="#">Clienti</a> |
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/cliente/aggiungi']"
+                    routerLinkActive="router-link-active" href="#">Aggiungi Clienti</a> |
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/fatture']" routerLinkActive="router-link-active"
+                    href="#">Fatture</a> |
+                <a class="nav-link text-white font-weight-bold" [routerLink]="['/aggProvince']" routerLinkActive="router-link-active"
+                    href="#">Aggiungi Province</a> |
+            </div>
+        </div>
+    </div>
+</nav>

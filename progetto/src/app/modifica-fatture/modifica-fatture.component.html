@@ -1,0 +1,19 @@
+<form>
+    <div class="form-group">
+        <label for="numero">Numero</label>
+        <input type="number"[(ngModel)]="fatture.numero"   name="numero" class="form-control" id="price">
+    </div>
+    <div class="form-group">
+        <label for="anno">Anno</label>
+        <input type="number"[(ngModel)]="fatture.anno"  name="anno" class="form-control" id="description">
+    </div>
+    <div class="form-group">
+        <label for="importo">Importo</label>
+        <input type="number"[(ngModel)]="fatture.importo" name="importo" class="form-control" id="image">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-warning form-control"(click)="aggiornare()">Aggiorna Modifiche</button>
+    </div>
+    
+</form>
+

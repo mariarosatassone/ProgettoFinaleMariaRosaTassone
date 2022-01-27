@@ -1,0 +1,24 @@
+<div class="my-3">
+    <h3 class="text-center">Aggiungi Provincia</h3>
+    <form>
+        <div class="col">
+            <label for="formGroupExampleInput2">Nome:</label>
+            <input type="text" [(ngModel)]="provincia.nome" name="nome" class="form-control" placeholder="Provincia...">
+        </div>
+
+        <div class="col">
+            <label for="formGroupExampleInput2">Sigla:</label>
+            <input type="text" [(ngModel)]="provincia.sigla" name="sigla" class="form-control"
+                placeholder="Sigla...">
+        </div>
+        
+
+
+
+        <div>
+            <button type="button" class="form-control btn btn-warning m-3 font-weight-bold" (click)="aggProvincia()">Aggiungi</button>
+        </div>
+        
+
+    </form>
+</div>

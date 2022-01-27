@@ -1,0 +1,68 @@
+<form>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="ragioneSociale">Ragione Sociale:</label>
+            <input type="text" [(ngModel)]="cliente.ragioneSociale" name="ragioneSociale" class="form-control"
+                placeholder="Ragione Sociale">
+        </div>
+        <div class="form-group col-6">
+            <label for="partitaIva">Partita Iva:</label>
+            <input type="text" [(ngModel)]="cliente.partitaIva" name="partitaIva" class="form-control"
+                placeholder="P.Iva">
+        </div>
+        <div class="form-group col-6">
+            <label for="tipoCliente">Tipo Cliente:</label>
+            <select [(ngModel)]="cliente.tipoCliente" [ngModelOptions]="{standalone: true}">
+                <option [ngValue]="item" *ngFor="let item of tipiCliente">
+                    {{item}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group col-6">
+            <label for="email">Email:</label>
+            <input type="email" [(ngModel)]="cliente.email" name="email" class="form-control" placeholder="email">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="pec">Pec:</label>
+            <input type="pec" [(ngModel)]="cliente.pec" name="pec" class="form-control" placeholder="pec">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="telefono">Telefono:</label>
+            <input type="telefono" [(ngModel)]="cliente.telefono" name="telefono" class="form-control"
+                placeholder="telefono">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="nomeContatto">Nome Cognome:</label>
+            <input type="nomeContatto" [(ngModel)]="cliente.nomeContatto" name="nomeContatto" class="form-control"
+                placeholder="nomeContatto">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="cognomeContatto">Cognome Contatto:</label>
+            <input type="cognomeContatto" [(ngModel)]="cliente.cognomeContatto" name="cognomeContatto"
+                class="form-control" placeholder="cognomeContatto">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="telefonoContatto">Telefono Contatto:</label>
+            <input type="telefonoContatto" [(ngModel)]="cliente.telefonoContatto" name="telefonoContatto"
+                class="form-control" placeholder="telefonoContatto">
+
+        </div>
+        <div class="form-group col-6">
+            <label for="emailContatto">Email Contatto:</label>
+            <input type="emailContatto" [(ngModel)]="cliente.emailContatto" name="emailContatto" class="form-control"
+                placeholder="emailContatto">
+
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <button type="button" class="btn btn-dark form-control" (click)="salva()">Salva</button>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header"></div>
+    <div class="card-body">
+        <h5 class="card-title">Data Fattura: {{fatture.data}}</h5>
+        <h5 class="card-title">Numero Fattura: {{fatture.numero}}</h5>
+        <h5 class="card-title">Anno: {{fatture.anno}}</h5>
+        <h5 class="card-title">Importo Fattura: {{fatture.importo}}</h5>
+        <h5 class="card-title">Stato Fattura: {{fatture.stato.nome}}</h5>
+        
+    <div class="form-group">
+        <button type="button" class="btn btn-warning form-control font-weight-bold"(click)="modificaFattura(fatture)">Modifica Fattura</button>
+    </div>
+
+    </div>
+</div>

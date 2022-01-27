@@ -1,0 +1,41 @@
+<div class="card text-white bg-dark m-3">
+  <div class="card-header font-weight-bold p-3 m-3 text-warning" >{{cliente.nomeContatto}} {{cliente.cognomeContatto}}</div>
+  <div class="card-body">
+    <h5 class="card-title">Ragione Sociale: {{cliente.ragioneSociale}}</h5>
+    <h5 class="card-title">Partita Iva:{{cliente. partitaIva}}</h5>
+    <h5 class="card-title">Tipo Cliente: {{cliente.tipoCliente}}</h5>
+    <h5 class="card-title">Email: {{cliente.email}}</h5>
+    <h5 class="card-title">Telefono: {{cliente.telefono}}</h5>
+    <h5 class="card-title">Nome Contatto: {{cliente.nomeContatto}}</h5>
+    <h5 class="card-title">Telefono Contatto:{{cliente. telefonoContatto}}</h5>
+    <h5 class="card-title">Email Contatto: {{cliente.emailContatto}}</h5>
+    <h5 class="card-title">Indirrizzo Sede Operativa:</h5>
+    <ul>
+      <li>via: {{cliente.indirizzoSedeOperativa.via}}</li>
+      <li>Civico: {{cliente.indirizzoSedeOperativa.civico}}</li>
+      <li>Cap: {{cliente.indirizzoSedeOperativa.cap}}</li>
+      <li>Località: {{cliente.indirizzoSedeOperativa.localita}}</li>
+      <ul>
+        <h5>Comune:</h5>
+        <li>Nome: {{cliente.indirizzoSedeOperativa.comune.nome}}</li>
+        <li>Provincia: {{cliente.indirizzoSedeOperativa.comune.provincia.nome}}</li>
+      </ul>
+    </ul>
+    <h5 class="card-title">Indirrizzo Sede Legale:</h5>
+    <ul>
+      <li>Via: {{cliente.indirizzoSedeLegale.via}}</li>
+      <li>Civico: {{cliente.indirizzoSedeLegale.civico}}</li>
+      <li>Cap: {{cliente.indirizzoSedeLegale.cap}}</li>
+      <li>Località: {{cliente.indirizzoSedeLegale.localita}}</li>
+    </ul>
+    <h5 class="card-title">Data Inserimento: {{cliente.dataInserimento}}</h5>
+    <h5 class="card-title">Data Ultimo Contatto: {{cliente.dataUltimoContatto}}</h5>
+    <h5 class="card-title">Fatturato Annuale: {{cliente.fatturatoAnnuale}}</h5>
+  </div>
+
+  <button class="btn btn-warning m-3 font-weight-bold" (click)="modifica(cliente)">Modifica</button>
+  <button class="btn btn-warning m-3 font-weight-bold" (click)="aggFattura(cliente)">Aggiungi Fattura</button>
+
+
+
+</div>

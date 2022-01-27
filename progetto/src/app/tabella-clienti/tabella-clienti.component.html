@@ -1,0 +1,31 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Cognome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefono</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of cliente; index as i">
+      <th scope="row">{{i+1}}</th>
+      <th>{{item.nomeContatto}}</th>
+      <td>{{item.cognomeContatto}}</td>
+      <td>{{item.emailContatto}}</td>
+      <td>{{item.telefonoContatto}}</td>
+      <td></td>
+      <td></td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm float-right mx-1"(click)="rimuovi(item)"><i class="bi bi-trash">Rimuovi</i></button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-warning btn-sm float-right mx-1"><i
+            class="bi bi-zoom-in"(click)="dettagli(item)">Dettagli Clienti</i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
