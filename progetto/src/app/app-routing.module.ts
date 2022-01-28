@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'fatture/:id/modifica', component: ModificaFattureComponent},
   { path: 'tabella/:id', component: DettaglioClientiComponent},
   { path: 'tabella/:id/modifica', component: ModificaClientiComponent},
-  { path: 'fatture/aggiungi', component: AggiungiFattureComponent},
+ 
   { path: 'cliente/id:/aggiungiFatture', component: AggiungiFattureComponent},
   { path: 'aggComune', component: AggComuneComponent},
   { path: 'aggProvince', component: AggProvinceComponent},

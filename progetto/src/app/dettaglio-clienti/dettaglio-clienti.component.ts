@@ -30,7 +30,7 @@ export class DettaglioClientiComponent implements OnInit {
   }
 
   aggFattura(cliente: Clienti) {
-    this.router.navigate(['clienti', cliente.id,'aggiungiFatture']);
+    this.router.navigate(['cliente', cliente.id,'aggiungiFatture']);
 
   }
 

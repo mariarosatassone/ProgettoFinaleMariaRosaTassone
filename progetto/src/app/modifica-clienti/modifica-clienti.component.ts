@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Clienti } from '../classes/clienti';
+import { Comune } from '../classes/comune';
 import { ClientiService } from '../services/clienti.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { ClientiService } from '../services/clienti.service';
 })
 export class ModificaClientiComponent implements OnInit {
 
-
+  comuni: Comune[] = [];
   cliente: Clienti = new Clienti;
   tipiCliente: string[] = [];
 
