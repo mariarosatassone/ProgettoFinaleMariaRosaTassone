@@ -29,7 +29,7 @@ export class ModificaClientiComponent implements OnInit {
     this.clientiService.modificaCliente(this.cliente).subscribe(data => {
       this.cliente = data
     })
-    this.router.navigate(['cliente/aggiungi'])
+    this.router.navigate(['tabella'])
   }
 
 }
