@@ -6,7 +6,7 @@
         <th scope="col">Numero</th>
         <th scope="col">Anno</th>
         <th scope="col">Importo</th>
-        <th scope="col"></th>
+        <th scope="col">stato</th>
         <th scope="col"></th>
       </tr>
     </thead>
@@ -17,6 +17,7 @@
         <td>{{item.numero}}</td>
         <td>{{item.anno}}</td>
         <td>{{item.importo}}</td>
+        <td>{{item.stato.nome}}</td>
         <td></td>
         <td>
           <button type="button" class="btn btn-danger btn-sm float-right mx-1"(click)="rimuovi(item)"><i class="bi bi-trash">Rimuovi Fatture</i></button>
