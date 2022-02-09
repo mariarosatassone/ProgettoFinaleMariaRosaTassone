@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { Clienti } from '../classes/clienti';
 import { Fatture } from '../classes/fatture';
 import { ClientiService } from '../services/clienti.service';
@@ -13,13 +14,15 @@ import { FattureService } from '../services/fatture.service';
 export class DettaglioClientiComponent implements OnInit {
 
   cliente!: Clienti;
-  fatture: Fatture = new Fatture;
+  fattura: Fatture[] = [];
 
   constructor(private route: ActivatedRoute,private clientiService: ClientiService, private router: Router, private fattureService: FattureService) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(data => {
       this.clientiService.getClientiById(data['id']).subscribe(response => this.cliente = response)
+      this.fattureService.getByCliente(data['id']).subscribe(response => this.fattura = response.content
+        )
     });
   }
 
@@ -33,6 +36,11 @@ export class DettaglioClientiComponent implements OnInit {
     this.router.navigate(['cliente', cliente.id,'aggiungiFatture']);
 
   }
+
+  dettaglifattura(cliente: Clienti) {
+    this.router.navigate(['fatture',cliente.id,'cliente'])
+  }
+
 
   
 

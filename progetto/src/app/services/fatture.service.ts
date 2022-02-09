@@ -55,6 +55,10 @@ export class FattureService {
 
   }
 
+  getByCliente(id: number) {
+    return this.http.get<FatturaData>(environment.serverAdress + 'api/fatture/cliente/' +id + '?page=0&size=20&sort=id,DESC')
+  }
+
 
 
   

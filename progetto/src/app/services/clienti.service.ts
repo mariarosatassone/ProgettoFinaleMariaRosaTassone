@@ -73,9 +73,7 @@ export class ClientiService {
   }
 
 
-  getByCliente(cliente: Clienti) {
-    return this.http.get<Fatture>(environment.serverAdress + 'api/fatture/cliente/' + cliente.id + '?page=0&size=20&sort=id,DESC')
-  }
+  
 
 
  

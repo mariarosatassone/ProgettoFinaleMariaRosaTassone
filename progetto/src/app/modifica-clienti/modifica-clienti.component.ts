@@ -28,8 +28,9 @@ export class ModificaClientiComponent implements OnInit {
   salva() {
     this.clientiService.modificaCliente(this.cliente).subscribe(data => {
       this.cliente = data
+      this.router.navigate(['tabella'])
     })
-    this.router.navigate(['tabella'])
+   
   }
 
 }

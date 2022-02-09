@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'cliente/id:/aggiungiFatture', component: AggiungiFattureComponent},
   { path: 'aggComune', component: AggComuneComponent},
   { path: 'aggProvince', component: AggProvinceComponent},
-  { path: 'fattureCliente/id:', component: FattureClienteComponent}
+  { path: 'fatture/:id/cliente', component: FattureClienteComponent}
  
 ];
 
